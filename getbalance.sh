@@ -37,7 +37,7 @@ if [ $errMsg = '"success"' ];then
     echo $intpowertime
     #对GPIO pin针角执行高电平（充电）
     echo power on
-    #./power.sh $pin 1
+    ./power.sh $pin 1
     #更新余额
     echo $balance > balance.txt
     #延时 powertime 秒，输出低电平（断电）。
